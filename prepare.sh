@@ -1,5 +1,8 @@
+# Make sure osqueryctl is stopped:
+osqueryctl stop
+
 echo "Creating extensions dir..."
-mkdir /etc/osquery/extensions/
+mkdir -p /etc/osquery/extensions/
 
 echo "Adding logging extension to osquery..."
 cp log_ext/bin/log.ext /etc/osquery/extensions/
